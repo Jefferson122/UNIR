@@ -30,7 +30,7 @@ Creation of a movie recommendation application using collaborative filtering tec
 Data analysis on a transportation company and interactive visualizations creation with Tableau.
 Implementation of a real-time data analysis solution using Kafka and Spark.
 
-#Contact
+# Contact
 If you would like to get in touch with me to discuss my experience and skills in Data Science, Big Data,
 Machine Learning, Python, Matlab, Power BI, Tableau, AWS, SQL, Kafka, Spark, and Pipelines,
 please feel free to email me at jeffersonpinzon2121@gmail.com.
