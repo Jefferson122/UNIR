@@ -1,0 +1,436 @@
+---
+title: "Mi primer R Markdown"
+subtitle: "El subtitulo"
+author: "Tu nombre"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: flatly
+    highlight: tango
+    toc: yes
+    toc_float: 
+      collapsed: false
+      smooth_scroll: true
+    code_folding: show #hide, none
+    code_download: TRUE
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(officer)
+library(flextable)
+
+knitr::opts_chunk$set(
+	message = FALSE,
+	warning = FALSE,
+	collapse = TRUE
+)
+```
+
+# Introducción
+
+*R Markdown* permite combinar:
+
+-   texto formateado
+-   bloques de código R
+
+De este modo, podemos elaborar informes un sólo lugar (archivo R Markdown) donde se edita tanto el texto del reporte, los códigos para construir los resultados a incluir, así como el formato general del documento y la gestión bibliográfica. Si el documento debe actualizarse (por ejemplo, cambian los datos), se efectúan en un sólo lugar todos los cambios y se re-compila el informe en el formato final deseado (PDF, Editor de Texto tipo Microsoft Word, diapositivas de presentación o un archivo dinámico tipo HTML).
+
+\
+
+## ¿Qué es un documento R Markdown?
+
+Son simplemente ficheros de texto, PERO facilitan mucho la tarea de generar informes o transparencias con contenido estadístico, ya que permiten mezclar en un mismo documento texto y código R.
+
+El código R (así como los resultados de la evaluación del código) se mostrarán automáticamente (gracias a `knitr`) en el documento final; de esta forma, se facilita mucho la realización de informes y transparencias ya que evita el tener que ir copiando los resultados (tablas, gráficos etc...) en el informe.
+
+Los documentos *R Markdown* tienen 3 partes o elementos:
+
+-   encabezamiento o YAML header
+-   trozos de código R
+-   texto
+
+## El encabezado
+
+Se encuentra al principio del documento y está delimitado por el par de tres guiones (`---`)
+
+    ---
+    title: "Mi primer R Markdown"
+    author: "Tu nombre"
+    date: "`r Sys.Date()`"
+    output: html_document
+    ---
+
+Este encabezado contiene los **metadatos** del documento, como su título, autor, fecha, además de una gran cantidad de opciones posibles que le permitirán configurar o personalizar todo el documento y su representación. Aquí, por ejemplo, la línea output: html_document indica que el documento de salida generado debe estar en formato HTML.
+
+## Bloques de código
+
+Como su nombre lo indica, contienen código R. Para que `{knitr}` distinga las instrucciones de R del texto normal tenemos que poner los bloques de código de R dentro de unas marcas o identificadores: ```` ```{r} ```` (donde r indica el nombre del lenguaje) al principio y ```` ``` ```` al final. Por ejemplo:
+
+```{r}
+mean(mtcars$mpg)
+```
+
+`{knitr}` interpreta este fragmento de texto como instrucciones de R porque van dentro de las marcas, y hará que R las ejecute y muestre los resultados en el documento final.
+
+Los bloques de código se ejecutan y se muestra su resultado (a menos que indiquemos lo contrario), por ejemplo:
+
+```{r datos}
+mean(mtcars$mpg)
+```
+
+\
+
+Los *chunks* pueden incluir diversas opciones que permiten una mayor flexibilidad en como se muestra el código y los resultados en el documento final. Las opciones más usadas son:
+
+-   `echo`
+-   `eval`
+-   `include`
+
+También puede ser útil considerar las opciones:
+
+-   `message`
+-   `warning`
+
+Para ver la lista completa puedes acceder [aquí](https://yihui.org/knitr/options/)
+
+```{r ejemplo_opciones}
+mean(mtcars$mpg)
+```
+
+
+<br>
+
+### Código en línea
+
+Los resultados del código se pueden insertar directamente en el texto de un archivo `.Rmd` encerrando el código con `` `r ` ``.
+
+Por ejemplo:
+
+El cubo de dos es `r 2^3`, o lo que es lo mismo, 2^3^ = `r 2^3`.
+
+\
+
+También podemos utilizar resultados de un bloque de código:
+
+```{r codigo-en-linea, include=FALSE}
+res <- mtcars %>%
+  summarize(media = mean(mpg), desvio = sd(mpg), n = length(mpg))
+```
+
+La muestra es de tamaño `r res$n`, su media es `r res$media`, y su desviación estándar es `r res$desvio`.
+
+En estos casos conviene utilizar también la función de redondeo:
+
+La muestra es de tamaño `r round(res$n, 2)`, su media es `r round(res$media, 2)`, y su desviación estándar es `r round(res$desvio, 2)`.
+
+## Gráficos
+
+También podemos incluir gráficos:
+
+```{r ajuste, results='hide'}
+ajuste <- lm(circumference ~ age, data = Orange)
+coef <- coefficients(ajuste)
+
+ggplot(data = Orange) +
+  geom_point(mapping = aes(x = age, y = circumference), pch = 21, color = "#0098CD", fill = "#DCF7FA", size = 3) +
+  theme_minimal()
+```
+
+o incluir imágenes (desde la web o desde nuestro ordenador)
+
+```{r, out.width='50%', fig.align='center', fig.cap='Caption o leyenda para la imagen'}
+knitr::include_graphics('https://upload.wikimedia.org/wikipedia/commons/d/df/Logo_UNIR.png')
+```
+
+También podemos utilizar código de Markdown ![](imagenes/Logo_UNIR.png){width="200px"}
+
+o también utilizando código HTML:
+
+<img src="imagenes/Logo_UNIR.png" width="200"/>
+
+
+
+
+
+
+## Formateo de texto
+
+
+### Negritas, cursivas
+
+Texto plano
+
+*cursiva* y *cursiva*
+
+**negrita** y **negrita**
+
+***cursiva y negrita*** o ***cursiva y negrita*** o ***cursiva y negrita*** o ***cursiva y negrita***
+
+
+
+### Superíndice y subíndice
+
+superíndice^2^ y subíndice~2~
+
+
+
+### Tachado
+
+~~Este texto está tachado,~~ pero este no.
+
+
+
+### Subrayado
+
+<u>Uso la etiqueta HTML para subrayar este texto</u> y sigo sin subrayar.
+
+
+
+### Color de fuente
+
+<font color = 'red'>Texto en rojo</font> <font color = '#0098CD'>Texto en azul UNIR</font>
+
+
+
+### Párrafos
+
+Los párrafos son una o múltiples líneas de texto adyacentes separadas por una o múltiples líneas en blanco.
+
+Termina la línea con dos espacios para una nueva línea.\
+Este texto comienzo en una nueva línea. Pero sin añadir los espacios en blanco al final, seguimos en la misma línea.
+
+Este es un nuevo párrafo pues dejamos una línea en blanco.
+
+Quiero separar este párrafo
+
+de este, pero dejar **más** líneas en blanco no funciona.
+
+Quiero separar este párrafo <br> <br> <br> de este, lo logro con la etiqueta HTML.
+
+O también usando
+
+\
+\
+
+
+lo consigo.
+
+### Citas en bloque
+
+Para marcar un fragmento de texto como una cita en Markdown, puedes crear las llamadas citas en bloque, utilizando el signo de mayor que (\>). Tienes dos opciones: marcar cada línea individual con este carácter o insertar únicamente uno al principio del párrafo de la cita sangrada y marcar el fin de la cita introduciendo una línea en blanco. La cita en bloque, a su vez, puede ser formateada con otros elementos.
+
+> Esta es una **cita con *formato***. La cita continúa aquí.
+
+> Este es otra **cita con *formato***.\
+> Este fragmento continúa en la siguiente línea.  
+y sigo aquí
+
+Esta línea ya no está sangrada.
+
+### Apartados y subapartados
+
+# Título 1er nivel
+
+## Título 2do nivel
+
+### Título 3er nivel
+
+#### Título 4to nivel
+
+##### Título 5to nivel
+
+###### Título 6to nivel
+
+## Listas
+
+-   Primer ítem
+-   Segundo ítem
+-   Tercer ítem
+
+o
+
+-   Primer ítem
+-   Segundo ítem
+-   Tercer ítem
+
+o
+
+-   Primer ítem
+-   Segundo ítem
+-   Tercer ítem
+
+Las listas ordenadas se logran con un número seguido de un punto.
+
+1.  Item uno
+2.  Item dos
+3.  Item tres
+
+o
+
+a.  Item a
+b.  Item b
+c.  Item c
+
+Aunque Markdown mostrará los items correctamente en orden, esto no es una buena idea:
+
+1.  Item uno
+2.  Item dos
+3.  Item tres
+
+También puedes usar listas anidadas
+
+1.  Item uno
+2.  Item dos
+3.  Item tres
+    -   Sub-item
+    -   Sub-item
+4.  Item cuatro
+
+o también
+
+1.  Item uno
+2.  Item dos
+3.  Item tres
+    i.  Sub-item
+    ii. Sub-item
+4.  Item cuatro
+
+o también
+
+-   Item uno
+-   Item dos
+-   Item tres
+    1.  Sub-item
+    2.  Sub-item
+-   Item cuatro
+
+## Notas al pie
+
+Colocar notas en el pie de página[^1] es muy fácil[^2].
+
+[^1]: Aquí encuentras el texto de la nota al pie de página.
+
+[^2]: **Las notas de pie de página** pueden *formatearse* también. Estas pueden ocupar varias líneas.
+
+## Cometarios
+
+<!-- comentar líneas de texto -->
+
+<!-- usando el atajo de teclado Ctrl + Shift + C   -->
+
+<!-- podemos comentar las lineas seleccionadas -->
+
+En el documento compilado no se muestra las líneas comentadas.
+
+## Tablas
+
+```{r, echo=TRUE}
+mtcars[1:7, 1:5]
+```
+
+```{r, echo=TRUE}
+knitr::kable(
+  mtcars[1:7, 1:5],
+  caption = "Un kable de knitr."
+)
+```
+
+Hay muchos otros paquetes de R que se pueden usar para generar tablas. Uno de ellos es `{flextable}`: si estás buscando un paquete de tablas que admita la más amplia gama de formatos de salida, `{flextable}` es probablemente una de las mejores opciones. Todos los formatos son compatibles con los formatos HTML, LaTeX y Office, y contienen las funciones de tabla más comunes (p. ej., formato condicional). Puede encontrar más información sobre flextable en [flextable](https://ardata-fr.github.io/flextable-book/)
+
+```{r tabla_flex}
+ftab <- flextable(mtcars[1:7,1:5])
+ftab <- set_caption(ftab, caption = "Ejemplo 1")
+ftab
+```
+
+```{r}
+flex_data <- flextable(mtcars[1:7,1:5]) %>%
+  border_remove()%>%
+  flextable::align(align = 'center', part = "all")
+
+big_border <- fp_border(color = "#0098CD", width = 2)
+std_border <- fp_border(color = "#0098CD", width = 1)
+
+flex_data <- hline_top(flex_data,part="body", border = std_border)%>%
+  vline(border = std_border, part = "body")%>%
+  vline_left(border = std_border, part = "body")%>%
+  hline_bottom(part="body", border = std_border)%>%
+  fontsize(size = 11, part = "all")%>%
+  bold(i=1,part='header')%>%
+  bg(i =1,bg='#0098CD', part = "header")%>%
+  color(i=1,color='white',part='header')%>%
+  bg(i = c(1, 3, 5,7), j = seq(1,5,2), bg='#d5e7fb', part = "body")%>%
+  font(fontname = "Calibri", part = "all")%>%
+  width(j=2,width = 2)%>%
+  width(j=1,width = 0.5)
+flex_data <- fix_border_issues(flex_data)
+flex_data
+```
+
+## Enlaces
+
+<https://www.unir.net>
+
+[UNIR](https://www.unir.net){target="_blank"}
+
+## Ecuaciones latex
+
+[Aquí](https://en.wikibooks.org/wiki/LaTeX/Mathematics) encontrás una guía sobre cómo escribir distintas ecuaciones utilizando funcionalidades de $\LaTeX$.
+
+Las raíces de la ecuación $x ^ 2 = 2$ son $x=\sqrt{ 2}$ y \$x=-\sqrt{2} \$; en general, las raíces de $ax^2+b x+c=0$, con $a\neq 0$, vienen dadas por la fórmula $$
+x  =   \frac{-b\pm\sqrt{b^2-4 a c}}{2a}.
+$$
+
+$$
+A_{m,n} = 
+ \begin{pmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{pmatrix}
+$$
+
+$$
+A_{m,n} = 
+ \begin{bmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{bmatrix}, \qquad
+  A_{m,n} = 
+ \begin{Bmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{Bmatrix}
+$$
+
+$$
+A_{m,n} = 
+ \begin{vmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{vmatrix} ; \qquad
+  A_{m,n} = 
+ \begin{Vmatrix}
+  a_{1,1} & a_{1,2} & \cdots & a_{1,n} \\
+  a_{2,1} & a_{2,2} & \cdots & a_{2,n} \\
+  \vdots  & \vdots  & \ddots & \vdots  \\
+  a_{m,1} & a_{m,2} & \cdots & a_{m,n} 
+ \end{Vmatrix}
+$$
+
+$$
+|x| = \left\{
+        \begin{array}{ccl}
+           x & & \text{si } x\geq 0\\
+           -x & & \text{si } x< 0
+        \end{array}
+      \right.
+$$
