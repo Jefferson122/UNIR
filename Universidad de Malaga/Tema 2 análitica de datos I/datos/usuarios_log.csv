@@ -1,0 +1,16 @@
+,ID,command,exit code
+0,1000,cat /etc/hosts,0
+1,1004,ls /tmm,2
+2,1004,ls /tmp,0
+3,1004,rm -rf /tmp,2
+4,1000,ping remotehosst,1
+5,1000,ping remotehost,0
+6,1000,ping 8.8.8.8,1
+7,1000,ip addr,0
+8,1002,ls /home/cha,0
+9,1002,rm scratch.txt,0
+10,1001,vim test.py,0
+11,1001,python test.py,0
+12,1002,rm scratch.txt.bak,0
+13,1002,exit,0
+14,1004,rm /tmp/data_U12544.csv,0

@@ -1,0 +1,6 @@
+ID,username,email,type,points
+1000,alice,alice@acme.com,administrator,23
+1001,bob,bob@buynlarge.com,invited,12
+1002,charles,charles@cyberdyne.net,invited,5
+1004,greg,greg@globex.us,invited,8
+1006,mary,mary@momcorp.com,administrator,19
