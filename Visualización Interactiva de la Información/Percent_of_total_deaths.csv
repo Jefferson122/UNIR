@@ -1,0 +1,170 @@
+,Year,Cause of death or injury,Value
+0,2017,Tuberculosis,0.0211573756141351
+2,2017,HIV/AIDS,0.0170611251089369
+4,2017,Diarrheal diseases,0.0280533101090737
+6,2017,Other intestinal infectious diseases,2.58723479591e-05
+8,2017,Lower respiratory infections,0.0457336479660751
+10,2017,Upper respiratory infections,0.0001628671493701
+12,2017,Otitis media,1.69440385863e-05
+14,2017,Meningitis,0.005148121667779
+16,2017,Encephalitis,0.0016510598694873
+18,2017,Diphtheria,6.47776890652e-05
+20,2017,Whooping cough,0.0016408007069808
+22,2017,Tetanus,0.0006816135000307
+24,2017,Measles,0.0017034712666564
+26,2017,Varicella and herpes zoster,0.0002786693563271
+28,2017,Malaria,0.011078340274879
+30,2017,Chagas disease,0.0001403720918739
+32,2017,Leishmaniasis,0.0001345632685432
+34,2017,African trypanosomiasis,2.43933373104e-05
+36,2017,Schistosomiasis,0.0001579495392248
+38,2017,Cysticercosis,1.33908238799e-05
+40,2017,Cystic echinococcosis,2.1386062453e-05
+42,2017,Lymphatic filariasis,0.0
+44,2017,Onchocerciasis,0.0
+46,2017,Trachoma,0.0
+48,2017,Dengue,0.0007233386058357
+50,2017,Yellow fever,8.55471470431e-05
+52,2017,Rabies,0.0002083847259727
+54,2017,Intestinal nematode infections,5.73008269868e-05
+56,2017,Food-borne trematodiases,0.0
+58,2017,Other neglected tropical diseases,0.0002245173644245
+60,2017,Maternal disorders,0.0034610645158844
+62,2017,Neonatal disorders,0.0318836686735364
+64,2017,Protein-energy malnutrition,0.0041427851160826
+66,2017,Iodine deficiency,0.0
+68,2017,Vitamin A deficiency,0.0
+70,2017,Dietary iron deficiency,0.0
+72,2017,Other nutritional deficiencies,0.0006832782337561
+74,2017,Sexually transmitted infections excluding HIV,0.0021285622744547
+76,2017,Acute hepatitis,0.0022591798525185
+78,2017,Leprosy,0.0
+80,2017,Other unspecified infectious diseases,0.0014169176647729
+82,2017,Esophageal cancer,0.0077924723494445
+84,2017,Stomach cancer,0.015461213609688
+86,2017,Liver cancer,0.0146468169971159
+88,2017,Larynx cancer,0.0022605990637818
+90,2017,"Tracheal, bronchus, and lung cancer",0.033658851543742
+92,2017,Breast cancer,0.0109324068791053
+94,2017,Cervical cancer,0.0046414284810586
+96,2017,Uterine cancer,0.0015236005308594
+98,2017,Prostate cancer,0.0074342635228325
+100,2017,Colon and rectum cancer,0.0160163636956137
+102,2017,Lip and oral cavity cancer,0.0034622018774819
+104,2017,Nasopharynx cancer,0.0012431580771098
+106,2017,Other pharynx cancer,0.0020986732114468
+108,2017,Gallbladder and biliary tract cancer,0.0031097191942689
+110,2017,Pancreatic cancer,0.0078841832924304
+112,2017,Malignant skin melanoma,0.0011022547576849
+114,2017,Non-melanoma skin cancer,0.0011635858923242
+116,2017,Ovarian cancer,0.0031455902611459
+118,2017,Testicular cancer,0.0001369499993452
+120,2017,Kidney cancer,0.0024761162489309
+122,2017,Bladder cancer,0.0035131997475803
+124,2017,Brain and nervous system cancer,0.0044175165107495
+126,2017,Thyroid cancer,0.0007370554828541
+128,2017,Mesothelioma,0.0005346084430456
+130,2017,Hodgkin lymphoma,0.0005819737511459
+132,2017,Non-Hodgkin lymphoma,0.0044442501437125
+134,2017,Multiple myeloma,0.0019146217258646
+136,2017,Leukemia,0.0062129296403176
+138,2017,Other malignant neoplasms,0.0064267064746691
+140,2017,Other neoplasms,0.0018396778897259
+142,2017,Rheumatic heart disease,0.0051034897906684
+144,2017,Ischemic heart disease,0.159626658585997
+146,2017,Stroke,0.1102370831646027
+148,2017,Hypertensive heart disease,0.0165460503875236
+150,2017,Cardiomyopathy and myocarditis,0.0065874314327402
+152,2017,Atrial fibrillation and flutter,0.0051343750058958
+154,2017,Aortic aneurysm,0.0029895066136537
+156,2017,Peripheral artery disease,0.0012542509990393
+158,2017,Endocarditis,0.0014905728862199
+160,2017,Non-rheumatic valvular heart disease,0.0025893166350714
+162,2017,Other cardiovascular and circulatory diseases,0.0064464193835328
+164,2017,Chronic obstructive pulmonary disease,0.0571591650863051
+166,2017,Pneumoconiosis,0.000385221317858
+168,2017,Asthma,0.0088490553775976
+170,2017,Interstitial lung disease and pulmonary sarcoidosis,0.0026390208215617
+172,2017,Other chronic respiratory diseases,0.0009320795728658
+174,2017,Cirrhosis and other chronic liver diseases,0.0236454613152961
+176,2017,Appendicitis,0.0007854796349155
+178,2017,Paralytic ileus and intestinal obstruction,0.0042986315662046
+180,2017,"Inguinal, femoral, and abdominal hernia",0.000789294657125
+182,2017,Inflammatory bowel disease,0.0006904701638102
+184,2017,Vascular intestinal disorders,0.0017168755227661
+186,2017,Gallbladder and biliary diseases,0.001975795706469
+188,2017,Pancreatitis,0.0018163798812019
+190,2017,Other digestive diseases,0.0015600601346918
+192,2017,Alzheimer's disease and other dementias,0.0449479270088809
+194,2017,Parkinson's disease,0.0060887697124242
+196,2017,Epilepsy,0.0023278790374181
+198,2017,Multiple sclerosis,0.0003692029581728
+200,2017,Motor neuron disease,0.0006089604981468
+202,2017,Other neurological disorders,0.0009642704503928
+204,2017,Schizophrenia,0.0
+206,2017,Alcohol use disorders,0.0033056131571215
+208,2017,Drug use disorders,0.0029781295066102
+210,2017,Depressive disorders,0.0
+212,2017,Bipolar disorder,0.0
+214,2017,Anxiety disorders,0.0
+216,2017,Eating disorders,5.8356283199e-06
+218,2017,Autism spectrum disorders,0.0
+220,2017,Attention-deficit/hyperactivity disorder,0.0
+222,2017,Conduct disorder,0.0
+224,2017,Idiopathic developmental intellectual disability,0.0
+226,2017,Other mental disorders,0.0
+228,2017,Diabetes mellitus,0.0244854451403609
+230,2017,Acute glomerulonephritis,0.0001998799430897
+232,2017,Chronic kidney disease,0.0219886687372709
+234,2017,Urinary diseases and male infertility,0.0048474177331912
+236,2017,Gynecological diseases,0.0001458309656909
+238,2017,Hemoglobinopathies and hemolytic anemias,0.0018691202076874
+240,2017,"Endocrine, metabolic, blood, and immune disorders",0.0025834419443294
+242,2017,Rheumatoid arthritis,0.0008450028128518
+244,2017,Osteoarthritis,0.0
+246,2017,Low back pain,0.0
+248,2017,Neck pain,0.0
+250,2017,Gout,0.0
+252,2017,Other musculoskeletal disorders,0.0013226229657464
+254,2017,Congenital birth defects,0.0104540629842378
+256,2017,Dermatitis,0.0
+258,2017,Psoriasis,0.0
+260,2017,Scabies,0.0
+262,2017,Fungal skin diseases,0.0
+264,2017,Viral skin diseases,0.0
+266,2017,Acne vulgaris,0.0
+268,2017,Alopecia areata,0.0
+270,2017,Pruritus,0.0
+272,2017,Urticaria,0.0
+274,2017,Decubitus ulcer,0.0003634746014863
+276,2017,Other skin and subcutaneous diseases,7.04337976841e-05
+278,2017,Age-related and other hearing loss,0.0
+280,2017,Other sense organ diseases,0.0
+282,2017,Oral disorders,0.0
+284,2017,Sudden infant death syndrome,0.0007142466127103
+286,2017,Road injuries,0.0222191428942067
+288,2017,Other transport injuries,0.0016433033422866
+290,2017,Falls,0.0124366155417836
+292,2017,Drowning,0.0052767374578483
+294,2017,"Fire, heat, and hot substances",0.0021562195658504
+296,2017,Poisonings,0.0012935765176541
+298,2017,Exposure to mechanical forces,0.0024397798151526
+300,2017,Adverse effects of medical treatment,0.0021730228781172
+302,2017,Animal contact,0.0014491317532093
+304,2017,Foreign body,0.0022183846851984
+306,2017,Other unintentional injuries,0.0016923863412223
+308,2017,Self-harm,0.0141891884963408
+310,2017,Interpersonal violence,0.0072454205604308
+312,2017,Exposure to forces of nature,0.0001716510313657
+314,2017,Environmental heat and cold exposure,0.0009536132898151
+316,2017,Ebola,1.43192410218886e-07
+318,2017,Executions and police conflict,0.0002852644560247
+320,2017,Zika virus,3.4678654745127524e-07
+322,2017,Guinea worm disease,0.0
+324,2017,Conflict and terrorism,0.0023187400248612
+326,2017,Typhoid and paratyphoid,0.002429595590211
+328,2017,Invasive Non-typhoidal Salmonella (iNTS),0.0010557693501751
+330,2017,Headache disorders,0.0
+332,2017,Bacterial skin diseases,0.0013586167062844
+334,2017,Blindness and vision impairment,0.0
+336,2017,Upper digestive system diseases,0.0052213828094569

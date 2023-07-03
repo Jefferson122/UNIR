@@ -1,0 +1,170 @@
+,Year,Cause of death or injury,Value
+1,2005 - 2010,Tuberculosis,-0.0325487755559998
+3,2005 - 2010,HIV/AIDS,-0.0456628972256115
+5,2005 - 2010,Diarrheal diseases,-0.0193584742704781
+7,2005 - 2010,Other intestinal infectious diseases,-0.0663090702758617
+9,2005 - 2010,Lower respiratory infections,-0.0211496438852426
+11,2005 - 2010,Upper respiratory infections,-0.0724115430345683
+13,2005 - 2010,Otitis media,-0.0566845229686553
+15,2005 - 2010,Meningitis,-0.0373921923661004
+17,2005 - 2010,Encephalitis,-0.0229988286102129
+19,2005 - 2010,Diphtheria,-0.1350428734453274
+21,2005 - 2010,Whooping cough,-0.0447329834586024
+23,2005 - 2010,Tetanus,-0.1121259593686446
+25,2005 - 2010,Measles,-0.1350579253385449
+27,2005 - 2010,Varicella and herpes zoster,-0.0311836222741761
+29,2005 - 2010,Malaria,-0.045183258021185
+31,2005 - 2010,Chagas disease,-0.0147370546651001
+33,2005 - 2010,Leishmaniasis,-0.1066566175443224
+35,2005 - 2010,African trypanosomiasis,-0.1812412129169514
+37,2005 - 2010,Schistosomiasis,-0.0306379651873642
+39,2005 - 2010,Cysticercosis,-0.0363208942562328
+41,2005 - 2010,Cystic echinococcosis,-0.051199380924484
+43,2005 - 2010,Lymphatic filariasis,0.0
+45,2005 - 2010,Onchocerciasis,0.0
+47,2005 - 2010,Trachoma,0.0
+49,2005 - 2010,Dengue,0.0362668474950215
+51,2005 - 2010,Yellow fever,-0.0387479644253421
+53,2005 - 2010,Rabies,-0.0819993704346103
+55,2005 - 2010,Intestinal nematode infections,-0.0685607376129447
+57,2005 - 2010,Food-borne trematodiases,0.0
+59,2005 - 2010,Other neglected tropical diseases,-0.0068570054646216
+61,2005 - 2010,Maternal disorders,-0.0318097670937832
+63,2005 - 2010,Neonatal disorders,-0.0335789811200444
+65,2005 - 2010,Protein-energy malnutrition,-0.0345190613001418
+67,2005 - 2010,Iodine deficiency,0.0
+69,2005 - 2010,Vitamin A deficiency,0.0
+71,2005 - 2010,Dietary iron deficiency,0.0
+73,2005 - 2010,Other nutritional deficiencies,-0.0132739520451164
+75,2005 - 2010,Sexually transmitted infections excluding HIV,-0.0303724870754477
+77,2005 - 2010,Acute hepatitis,-0.0266269497604728
+79,2005 - 2010,Leprosy,0.0
+81,2005 - 2010,Other unspecified infectious diseases,-0.0121198962186042
+83,2005 - 2010,Esophageal cancer,-0.0167135266247122
+85,2005 - 2010,Stomach cancer,-0.0144272924683661
+87,2005 - 2010,Liver cancer,-0.0002990918622154
+89,2005 - 2010,Larynx cancer,0.0017714764839048
+91,2005 - 2010,"Tracheal, bronchus, and lung cancer",0.0094959506515479
+93,2005 - 2010,Breast cancer,0.0064601039403448
+95,2005 - 2010,Cervical cancer,-0.0037467915161701
+97,2005 - 2010,Uterine cancer,0.0038400803293594
+99,2005 - 2010,Prostate cancer,0.0114182267703886
+101,2005 - 2010,Colon and rectum cancer,0.0093316367934121
+103,2005 - 2010,Lip and oral cavity cancer,0.0174307350194793
+105,2005 - 2010,Nasopharynx cancer,0.003331598304275
+107,2005 - 2010,Other pharynx cancer,0.0225172833890666
+109,2005 - 2010,Gallbladder and biliary tract cancer,0.0088861733841288
+111,2005 - 2010,Pancreatic cancer,0.0218499748722376
+113,2005 - 2010,Malignant skin melanoma,0.0092972487374766
+115,2005 - 2010,Non-melanoma skin cancer,0.0218328162786414
+117,2005 - 2010,Ovarian cancer,0.0077590611051949
+119,2005 - 2010,Testicular cancer,-0.0033453960487713
+121,2005 - 2010,Kidney cancer,0.0134920495788883
+123,2005 - 2010,Bladder cancer,0.0076286794767816
+125,2005 - 2010,Brain and nervous system cancer,0.0077316804940062
+127,2005 - 2010,Thyroid cancer,0.0160300064462895
+129,2005 - 2010,Mesothelioma,0.0169157387259865
+131,2005 - 2010,Hodgkin lymphoma,-0.0155094341424611
+133,2005 - 2010,Non-Hodgkin lymphoma,0.0119601648577434
+135,2005 - 2010,Multiple myeloma,0.0125264072565639
+137,2005 - 2010,Leukemia,-0.0018041898524409
+139,2005 - 2010,Other malignant neoplasms,0.0189690381369141
+141,2005 - 2010,Other neoplasms,0.0183903250536992
+143,2005 - 2010,Rheumatic heart disease,-0.0174829476322989
+145,2005 - 2010,Ischemic heart disease,0.003884185158542
+147,2005 - 2010,Stroke,-0.0069864855655872
+149,2005 - 2010,Hypertensive heart disease,0.0242050673353062
+151,2005 - 2010,Cardiomyopathy and myocarditis,-0.0102747128987381
+153,2005 - 2010,Atrial fibrillation and flutter,0.025084055862065
+155,2005 - 2010,Aortic aneurysm,-0.0001149739121301
+157,2005 - 2010,Peripheral artery disease,0.0329399818101206
+159,2005 - 2010,Endocarditis,0.0131310894986743
+161,2005 - 2010,Non-rheumatic valvular heart disease,0.022130853816456
+163,2005 - 2010,Other cardiovascular and circulatory diseases,0.0034045749843206
+165,2005 - 2010,Chronic obstructive pulmonary disease,-0.0065446304618717
+167,2005 - 2010,Pneumoconiosis,-0.0157865050744023
+169,2005 - 2010,Asthma,-0.0162356356046732
+171,2005 - 2010,Interstitial lung disease and pulmonary sarcoidosis,0.0323684542168693
+173,2005 - 2010,Other chronic respiratory diseases,0.00914188593461
+175,2005 - 2010,Cirrhosis and other chronic liver diseases,-0.0010887562985817
+177,2005 - 2010,Appendicitis,-0.0100376342941654
+179,2005 - 2010,Paralytic ileus and intestinal obstruction,0.0051534182285708
+181,2005 - 2010,"Inguinal, femoral, and abdominal hernia",0.0046188886103032
+183,2005 - 2010,Inflammatory bowel disease,0.0032567400579825
+185,2005 - 2010,Vascular intestinal disorders,0.0071112505168184
+187,2005 - 2010,Gallbladder and biliary diseases,0.0071182689130887
+189,2005 - 2010,Pancreatitis,0.0050303751409118
+191,2005 - 2010,Other digestive diseases,0.004604540870933
+193,2005 - 2010,Alzheimer's disease and other dementias,0.0247073309062079
+195,2005 - 2010,Parkinson's disease,0.0214298992609986
+197,2005 - 2010,Epilepsy,-0.0121798129435286
+199,2005 - 2010,Multiple sclerosis,0.0030184829920212
+201,2005 - 2010,Motor neuron disease,0.0171840431109009
+203,2005 - 2010,Other neurological disorders,0.0084225048398002
+205,2005 - 2010,Schizophrenia,0.0
+207,2005 - 2010,Alcohol use disorders,-0.0309869099082793
+209,2005 - 2010,Drug use disorders,0.010682145695321
+211,2005 - 2010,Depressive disorders,0.0
+213,2005 - 2010,Bipolar disorder,0.0
+215,2005 - 2010,Anxiety disorders,0.0
+217,2005 - 2010,Eating disorders,0.0053549043746982
+219,2005 - 2010,Autism spectrum disorders,0.0
+221,2005 - 2010,Attention-deficit/hyperactivity disorder,0.0
+223,2005 - 2010,Conduct disorder,0.0
+225,2005 - 2010,Idiopathic developmental intellectual disability,0.0
+227,2005 - 2010,Other mental disorders,0.0
+229,2005 - 2010,Diabetes mellitus,0.0090209303006913
+231,2005 - 2010,Acute glomerulonephritis,-0.0096424204088776
+233,2005 - 2010,Chronic kidney disease,0.0174147789677688
+235,2005 - 2010,Urinary diseases and male infertility,0.0169997242546956
+237,2005 - 2010,Gynecological diseases,0.0009031220223035
+239,2005 - 2010,Hemoglobinopathies and hemolytic anemias,-0.0099076316676545
+241,2005 - 2010,"Endocrine, metabolic, blood, and immune disorders",0.0140343369912046
+243,2005 - 2010,Rheumatoid arthritis,0.0067036445932506
+245,2005 - 2010,Osteoarthritis,0.0
+247,2005 - 2010,Low back pain,0.0
+249,2005 - 2010,Neck pain,0.0
+251,2005 - 2010,Gout,0.0
+253,2005 - 2010,Other musculoskeletal disorders,0.0129563258175608
+255,2005 - 2010,Congenital birth defects,-0.0255429252532611
+257,2005 - 2010,Dermatitis,0.0
+259,2005 - 2010,Psoriasis,0.0
+261,2005 - 2010,Scabies,0.0
+263,2005 - 2010,Fungal skin diseases,0.0
+265,2005 - 2010,Viral skin diseases,0.0
+267,2005 - 2010,Acne vulgaris,0.0
+269,2005 - 2010,Alopecia areata,0.0
+271,2005 - 2010,Pruritus,0.0
+273,2005 - 2010,Urticaria,0.0
+275,2005 - 2010,Decubitus ulcer,0.0065733730647192
+277,2005 - 2010,Other skin and subcutaneous diseases,0.0109221793578981
+279,2005 - 2010,Age-related and other hearing loss,0.0
+281,2005 - 2010,Other sense organ diseases,0.0
+283,2005 - 2010,Oral disorders,0.0
+285,2005 - 2010,Sudden infant death syndrome,-0.0311873777170123
+287,2005 - 2010,Road injuries,-0.0103757946936111
+289,2005 - 2010,Other transport injuries,-0.0099124026815338
+291,2005 - 2010,Falls,0.0087667939833703
+293,2005 - 2010,Drowning,-0.035210560155278
+295,2005 - 2010,"Fire, heat, and hot substances",-0.0254560840746536
+297,2005 - 2010,Poisonings,-0.0224764610022997
+299,2005 - 2010,Exposure to mechanical forces,-0.0188456325755424
+301,2005 - 2010,Adverse effects of medical treatment,-0.0005455561863922
+303,2005 - 2010,Animal contact,-0.0152475833339978
+305,2005 - 2010,Foreign body,-0.0183069206181149
+307,2005 - 2010,Other unintentional injuries,-0.0159940586980799
+309,2005 - 2010,Self-harm,-0.0151676721447045
+311,2005 - 2010,Interpersonal violence,-0.0176683322604073
+313,2005 - 2010,Exposure to forces of nature,0.1971071563821087
+315,2005 - 2010,Environmental heat and cold exposure,0.0887922517887535
+317,2005 - 2010,Ebola,0.0
+319,2005 - 2010,Executions and police conflict,-0.0232413288591951
+321,2005 - 2010,Zika virus,0.0
+323,2005 - 2010,Guinea worm disease,0.0
+325,2005 - 2010,Conflict and terrorism,0.0325757458770547
+327,2005 - 2010,Typhoid and paratyphoid,-0.0321463924891874
+329,2005 - 2010,Invasive Non-typhoidal Salmonella (iNTS),-0.0331555521658668
+331,2005 - 2010,Headache disorders,0.0
+333,2005 - 2010,Bacterial skin diseases,0.0157828829953705
+335,2005 - 2010,Blindness and vision impairment,0.0
+337,2005 - 2010,Upper digestive system diseases,-0.0210665961297803
